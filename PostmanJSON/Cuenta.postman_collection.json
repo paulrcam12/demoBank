@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "e6882160-0378-4122-bfd0-ac8c7d0d31df",
+		"name": "Cuenta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12380031"
+	},
+	"item": [
+		{
+			"name": "Crear Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"numeroCuenta\": 478758,\r\n//     \"tipoCuenta\": \"Ahorro\",\r\n//     \"saldoInicial\": 2000,\r\n//     \"estado\": true,\r\n//     \"clienteId\": 1001\r\n// }\r\n// {\r\n//     \"numeroCuenta\": 225487,\r\n//     \"tipoCuenta\": \"Corriente\",\r\n//     \"saldoInicial\": 100,\r\n//     \"estado\": true,\r\n//     \"clienteId\": 1002\r\n// }\r\n// {\r\n//     \"numeroCuenta\": 495878,\r\n//     \"tipoCuenta\": \"Ahorros\",\r\n//     \"saldoInicial\": 0,\r\n//     \"estado\": true,\r\n//     \"clienteId\": 1003\r\n// }\r\n// {\r\n//     \"numeroCuenta\": 496825,\r\n//     \"tipoCuenta\": \"Ahorros\",\r\n//     \"saldoInicial\": 540,\r\n//     \"estado\": true,\r\n//     \"clienteId\": 1002\r\n// }\r\n// {\r\n//     \"numeroCuenta\": 585545,\r\n//     \"tipoCuenta\": \"Corriente\",\r\n//     \"saldoInicial\": 1000,\r\n//     \"estado\": true,\r\n//     \"clienteId\": 1001\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/v1/cuenta/crear"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\": 478758,\r\n    \"tipoCuenta\": \"Ahorros\",\r\n    \"saldoInicial\": 100,\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/v1/cuenta/editar"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8090/api/v1/cuenta/obtener/478758"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cuenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8090/api/v1/cuenta/eliminar/505051"
+			},
+			"response": []
+		}
+	]
+}

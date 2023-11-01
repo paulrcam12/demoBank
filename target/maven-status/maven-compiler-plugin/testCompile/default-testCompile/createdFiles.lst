@@ -1,0 +1,5 @@
+com\example\demobank\adapter\out\persistence\Reporte\ReporteRepositoryTest.class
+com\example\demobank\DemoBankApplicationTests.class
+com\example\demobank\application\services\MovimientoCRUDServiceTest.class
+com\example\demobank\adapter\in\ClienteCRUDControllerTest.class
+com\example\demobank\adapter\in\CuentaCRUDControllerTest.class

@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "f57d5c22-c4e9-48e1-9eb8-d8ec68801b88",
+		"name": "Movimiento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12380031"
+	},
+	"item": [
+		{
+			"name": "Crear Movimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"tipo\": \"DEBITO\",\r\n//     \"valor\": 575,\r\n//     \"idCuenta\": 478758\r\n// }\r\n// {\r\n//     \"tipo\": \"CREDITO\",\r\n//     \"valor\": 600,\r\n//     \"idCuenta\": 225487\r\n// }\r\n// {\r\n//     \"tipo\": \"CREDITO\",\r\n//     \"valor\": 150,\r\n//     \"idCuenta\": 495878\r\n// }\r\n// {\r\n//     \"tipo\": \"DEBITO\",\r\n//     \"valor\": 540,\r\n//     \"idCuenta\": 496825\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/v1/movimiento/crear"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Movimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idMovimiento\": 10,\r\n    \"fecha\": \"2023-10-31T00:09:01.480000\",\r\n    \"tipo\": \"DEBITO\",\r\n    \"valor\": -150,\r\n    \"saldo\": 100,\r\n    \"idCuenta\": 505050\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/v1/movimiento/editar"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Movimiento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8090/api/v1/movimiento/eliminar/3"
+			},
+			"response": []
+		}
+	]
+}

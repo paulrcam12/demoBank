@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "fbe897d6-b56f-41db-ade5-b0818d07ae88",
+		"name": "Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12380031"
+	},
+	"item": [
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"clienteId\": 1001,\r\n//     \"contrasena\": 1234,\r\n//     \"estado\": true,\r\n//     \"identificacion\": \"1788554578\",\r\n//     \"nombre\": \"Jose Lema\",\r\n//     \"genero\": \"Masculino\",\r\n//     \"edad\": 26,\r\n//     \"direccion\": \"Otavalo sn y principal\",\r\n//     \"telefono\": \"098254785\"\r\n// }\r\n// {\r\n//     \"clienteId\": 1002,\r\n//     \"contrasena\": 5678,\r\n//     \"estado\": true,\r\n//     \"identificacion\": \"1755441125\",\r\n//     \"nombre\": \"Marianela Montalvo\",\r\n//     \"genero\": \"Femenino\",\r\n//     \"edad\": 30,\r\n//     \"direccion\": \"Amazonas y NNUU\",\r\n//     \"telefono\": \"097548965\"\r\n// }\r\n// {\r\n//     \"clienteId\": 1003,\r\n//     \"contrasena\": 1245,\r\n//     \"estado\": true,\r\n//     \"identificacion\": \"1799668542\",\r\n//     \"nombre\": \"Juan Osorio\",\r\n//     \"genero\": \"Masculino\",\r\n//     \"edad\": 30,\r\n//     \"direccion\": \"13 junio y Equinoccial\",\r\n//     \"telefono\": \"098874587\"\r\n// }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/v1/cliente/crear"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroCuenta\": 478758,\r\n    \"tipoCuenta\": \"Ahorros\",\r\n    \"saldoInicial\": 100,\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/api/v1/cuenta/editar"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8090/api/v1/cliente/eliminar/1010"
+			},
+			"response": []
+		}
+	]
+}

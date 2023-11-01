@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demobank.adapter.out.persistence.Reporte.ReporteRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.476 s - in com.example.demobank.adapter.out.persistence.Reporte.ReporteRepositoryTest

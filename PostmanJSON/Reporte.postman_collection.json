@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "0aac8c18-27ab-44fd-9662-997df6d10e5c",
+		"name": "Reporte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12380031"
+	},
+	"item": [
+		{
+			"name": "Generar Reporte",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/v1/reporte/generar?since=2023-10-31 00:00:00&to=2023-11-02 05:00:00&clienteId=1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v1",
+						"reporte",
+						"generar"
+					],
+					"query": [
+						{
+							"key": "since",
+							"value": "2023-10-31 00:00:00"
+						},
+						{
+							"key": "to",
+							"value": "2023-11-02 05:00:00"
+						},
+						{
+							"key": "clienteId",
+							"value": "1002"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
